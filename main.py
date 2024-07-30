@@ -2,8 +2,6 @@ import argparse
 import os
 import xml.dom.minidom
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
     # 검색할 경로를 option 으로 전달받음
@@ -18,7 +16,7 @@ if __name__ == '__main__':
     else:
         FULL_PATH = os.getcwd()
 
-    # 현재 경로의 모든 xml파일 조회
+    # 경로의 모든 xml파일 조회
     for file in os.listdir(FULL_PATH):
         if file.endswith('.xml'):
             full_file_path = os.path.join(FULL_PATH, file)
